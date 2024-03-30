@@ -60,6 +60,12 @@ Hi user1! You've successfully authenticated, but GitHub does not provide shell a
 by default every repo will use the global one.
 
 
+## clone the repo with the correct ssh key
+
+```
+git clone git@provider.com:user1/projectName.git --config core.sshCommand="ssh -i ~/.ssh/user1"
+```
+
 
 ## define local github user
 To use a different user we need modify the repo `.git/config` file
